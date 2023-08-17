@@ -25,7 +25,7 @@ function LinkIcons(){
     return(
         <>
         <div className="linkIcons">
-            <a href="mailto:someone@example.com" target="_blank">
+            <a href="mailto:matthew.lategan26@gmail.com" target="_blank">
                 <img className='link' src={emailIcon} alt="Email icon" />
             </a>
             <a href="https://github.com/RoughRoman" target="_blank">
