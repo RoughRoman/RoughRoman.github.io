@@ -1,0 +1,23 @@
+
+.aboutBody{
+    display: flex;
+
+}
+
+.aboutSection{
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+
+.Face{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 30px;
+    border-color: #03C988;
+    border-width: 1px;
+    border-style:solid;
+    filter: drop-shadow(2px 2px 2px #000000);
+    margin-left: 50px;
+}
