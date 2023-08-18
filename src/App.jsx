@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import HeroBar from './herobar/herobar.jsx';
 import AboutSection from './about/about';
-import EducationSection from './education/educationSection';
+import ExperienceSection from './Experience/experienceSection';
 import Footer from './footer/footer';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <>
      <HeroBar></HeroBar>
      <AboutSection></AboutSection>
-     <EducationSection></EducationSection>
+     <ExperienceSection></ExperienceSection>
      <Footer></Footer>
 
     </>
