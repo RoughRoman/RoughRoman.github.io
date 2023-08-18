@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    justify-content: left;
+    background-color: rgb(32, 32, 32);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footerText{
+    font-size: 15px;
+    color: grey;
+    text-decoration: none;
+}
+li{
+    color: grey;
+}
+
+
