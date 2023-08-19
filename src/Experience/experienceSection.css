@@ -1,0 +1,24 @@
+.SkillPillContainer{
+    display: flex;  
+    justify-content: space-evenly; 
+}
+
+.SkillPill{
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: #03C988;
+    border-width: 2px;
+    border-style: solid;
+    
+    
+   
+}
+
+.SkillLabel{
+padding: 0px;
+margin: 0px;
+color: #03C988;
+text-align: center;
+}
+
