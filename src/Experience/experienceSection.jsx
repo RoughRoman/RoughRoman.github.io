@@ -4,8 +4,9 @@ import "./experienceSection.css";
 export default function ExperienceSection(){
     return (
         <>  
+            
+            <div className=" ExperienceSection">
             <h2>Experience</h2>
-            <div>
                 
                 <ExperienceItem 
                     ExperienceProp ={{

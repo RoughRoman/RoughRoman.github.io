@@ -1,6 +1,6 @@
 .SkillPillContainer{
     display: flex;  
-    justify-content: space-evenly; 
+    justify-content: left; 
 }
 
 .SkillPill{
@@ -10,6 +10,8 @@
     border-color: #03C988;
     border-width: 2px;
     border-style: solid;
+    margin-left: 10px;
+    margin-right: 10px;
     
     
    
@@ -22,3 +24,10 @@ color: #03C988;
 text-align: center;
 }
 
+
+.ExperienceSection{
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 15px;
+
+}
