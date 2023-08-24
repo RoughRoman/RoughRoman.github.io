@@ -41,7 +41,7 @@ export default function AboutSection(){
                         constant desire to improve, exploring emerging technologies and pushing the
                         boundaries of technological advancements.
                     </p>
-                    <img className='Face' src={facePic} alt="Face"  />
+                    {/*<img className='Face' src={facePic} alt="Face"  />*/}
                 </div>
                 
             </div>

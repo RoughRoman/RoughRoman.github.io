@@ -10,11 +10,19 @@ function App() {
 
   return (
     <>
-     <HeroBar></HeroBar>
-     <AboutSection></AboutSection>
-     <ExperienceSection></ExperienceSection>
-     <Footer></Footer>
-
+    <div className='DualColumns'>
+      <div className='HeroColumn'>
+        <HeroBar></HeroBar>
+        <AboutSection></AboutSection>
+        </div>
+      <div className='ExperienceColumn'>
+        <ExperienceSection></ExperienceSection>
+      </div>
+      
+    </div>
+    <Footer></Footer>
+     
+     
     </>
   )
 }

@@ -18,10 +18,10 @@
 }
 
 .SkillLabel{
-padding: 0px;
-margin: 0px;
-color: #03C988;
-text-align: center;
+    padding: 0px;
+    margin: 0px;
+    color: #03C988;
+    text-align: center;
 }
 
 
@@ -30,4 +30,10 @@ text-align: center;
     margin-right: 80px;
     padding: 15px;
 
+}
+
+
+.ExperienceItem{
+    color: #03C988;
+    
 }

@@ -1,9 +1,10 @@
 .footer{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     background-color: rgb(32, 32, 32);
     padding-left: 20px;
     padding-right: 20px;
+    
 }
 
 .footerText{

@@ -20,6 +20,16 @@ export default function ExperienceSection(){
                     additonalInfo: "Final Average: 75%"}}
                 />
 
+                <ExperienceItem 
+                    ExperienceProp ={{
+                    title: "Some other Experience Lmao",
+                    date: "1914-1918",
+                    body: "Total collapse of the german Empire.  Jirre that shit was wack"
+                    +     " I personally played all sides",
+                    skills: ["Marksmanship","French Girls", "Murdering","Artillery", "Knitting"],
+                    additonalInfo: ">:]"}}
+                />
+
             </div>
         </>
     );
