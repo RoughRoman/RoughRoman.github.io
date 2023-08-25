@@ -1,3 +1,10 @@
 .DualColumns{
     display: flex;
 }
+.HeroColumn{
+    max-width: 40%;
+}
+
+.ExperienceColumn{
+    max-width: 60%;
+}

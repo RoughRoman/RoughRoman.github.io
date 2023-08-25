@@ -3,6 +3,7 @@ import emailIcon from '../assets/icons/email.png';
 import githubIcon from '../assets/icons/github.png';
 import instaIcon from '../assets/icons/instagram.png';
 import linkedinIcon from '../assets/icons/linkedin.png';
+import Section from '../basic Components/section';
 
 import './herobar.css';
 
@@ -10,9 +11,12 @@ export default function HeroBar(){
     return(
         <>
         <div className='heroBar'>
-            <h1>Matthew Lategan</h1>
-            <h2>Software Fanatic</h2>
-            <p>Tinkering with everything Computer Science. <br></br>Occasionally, it works!</p>
+            <Section props = {{
+                heading: "Matthew Lategan",
+                subHeading: "Software Fanatic",
+                body: "Tinkering with everything Computer Science. Occasionally, it works!"
+                
+            }} ></Section>
             <LinkIcons></LinkIcons>
         </div>
             

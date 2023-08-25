@@ -1,24 +1,8 @@
-h1{
-    color: #03C988;
-    font-size: 50px;
-}
-h2{
-    color: #a9d6e9;
-    font-size: 30px;
-}
-p{
-    font-size: 20px;
-    color:#a9d6e9
-}
 
-
-.heroBar{
-    padding-top: 60px;
-    padding-left: 80px;
-}
 .linkIcons{
     display: flex;
     justify-content:left;
+    padding-left: 80px;
     
 }
 

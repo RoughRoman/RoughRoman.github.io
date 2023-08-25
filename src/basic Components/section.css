@@ -1,0 +1,19 @@
+.sectionHeader{
+    color: #03C988;
+    font-size: 50px;
+}
+
+.sectionSubHeading{
+    color: #a9d6e9;
+    font-size: 30px;
+}
+
+.sectionBody{
+    color: #a9d6e9;
+    font-size: 20px;
+}
+
+.section{
+    padding-top: 60px;
+    padding-left: 80px;
+}
