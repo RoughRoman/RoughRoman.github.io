@@ -22,11 +22,10 @@ export default function ExperienceSection(){
 
                 <ExperienceItem 
                     ExperienceProp ={{
-                    title: "Some other Experience Lmao",
-                    date: "1914-1918",
-                    body: "Total collapse of the german Empire.  Jirre that shit was wack"
-                    +     " I personally played all sides",
-                    skills: ["Marksmanship","French Girls", "Murdering","Artillery", "Knitting"],
+                    title: "Test Title",
+                    date: "Test date",
+                    body: "lorem ipsum something something. PLACEHOLDER TEXT",
+                    skills: ["Skill 1","Skill 2", "Skill 3","Skill 4", "Skill 5"],
                     additonalInfo: ">:]"}}
                 />
 
