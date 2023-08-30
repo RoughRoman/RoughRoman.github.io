@@ -14,18 +14,35 @@ function App() {
 
   if (isMobile){
     return(
-      <div className='MobileView'>
-        <HeroBar></HeroBar>
-        <AboutSection></AboutSection>
-        <ExperienceSection></ExperienceSection>
-        <Footer></Footer>
-      </div>
+      
+      <>
+      <h1 className='tempHead'>Website Under Construction.</h1>
+        <p className='tempP'>Please ignore the doodads, horrible formatting, and insane ramblings</p>
+        <br />
+        <em className='tempEm'>unless you dig it.</em>
+        
+        <div className='MobileView'>
+          <HeroBar></HeroBar>
+          <AboutSection></AboutSection>
+          <ExperienceSection></ExperienceSection>
+          <Footer></Footer>
+        </div>
+        
+      </>
+      
     )
 
   }
   else{ // if desktop split into two columns
     return (
       <>
+      <h1 className='tempHead'>Website Under Construction.</h1>
+        <p className='tempP'>Please ignore the doodads, horrible formatting, and insane ramblings</p>
+        <br />
+        <em className='tempEm'>unless you dig it.</em>
+      
+
+
       <div className='DualColumns'>
         <div className='HeroColumn'>
           <HeroBar></HeroBar>
