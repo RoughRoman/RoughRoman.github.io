@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './App.css';
-import HeroBar from './herobar/herobar.jsx';
-import AboutSection from './about/about';
-import ExperienceSection from './Experience/experienceSection';
-import Footer from './footer/footer';
+import HeroBar from './specialComponents/herobar/herobar.jsx';
+import AboutSection from './specialComponents/about/about';
+import ExperienceSection from './specialComponents/Experience/experienceSection';
+import Footer from './specialComponents/footer/footer';
 
-import Section from './basic Components/section';
+
 
 import {isMobile} from 'react-device-detect';
 
@@ -14,13 +14,7 @@ function App() {
 
   if (isMobile){
     return(
-      
       <>
-      <h1 className='tempHead'>Website Under Construction.</h1>
-        <p className='tempP'>Please ignore the doodads, horrible formatting, and insane ramblings</p>
-        <br />
-        <em className='tempEm'>unless you dig it.</em>
-        
         <div className='MobileView'>
           <HeroBar></HeroBar>
           <AboutSection></AboutSection>
@@ -36,13 +30,6 @@ function App() {
   else{ // if desktop split into two columns
     return (
       <>
-      <h1 className='tempHead'>Website Under Construction.</h1>
-        <p className='tempP'>Please ignore the doodads, horrible formatting, and insane ramblings</p>
-        <br />
-        <em className='tempEm'>unless you dig it.</em>
-      
-
-
       <div className='DualColumns'>
         <div className='HeroColumn'>
           <HeroBar></HeroBar>

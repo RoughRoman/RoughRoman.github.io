@@ -1,7 +1,6 @@
 
-import facePic from '../assets/images/facepic.jpg';
 import './about.css'
-import Section from '../basic Components/section';
+import Section from '../../basic Components/section/section';
 
 // mobile rendering detection package
 import {isMobile} from 'react-device-detect';

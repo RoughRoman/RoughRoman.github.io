@@ -1,9 +1,9 @@
 import React from 'react';
-import emailIcon from '../assets/icons/email.png';
-import githubIcon from '../assets/icons/github.png';
-import instaIcon from '../assets/icons/instagram.png';
-import linkedinIcon from '../assets/icons/linkedin.png';
-import Section from '../basic Components/section';
+import emailIcon from '../../assets/icons/email.png';
+import githubIcon from '../../assets/icons/github.png';
+import instaIcon from '../../assets/icons/instagram.png';
+import linkedinIcon from '../../assets/icons/linkedin.png';
+import Section from '../../basic Components/section/section';
 
 import './herobar.css';
 
