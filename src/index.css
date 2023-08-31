@@ -5,3 +5,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.LandingPage{
+    text-align: center;
+    color: aquamarine;
+}
