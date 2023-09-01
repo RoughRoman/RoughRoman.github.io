@@ -10,7 +10,7 @@ export default function Footer(){
                 <a className="footerText" href="mailto:matthew.lategan26@gmail.com">matthew.lategan26@gmail.com</a>
                 <br />
                 <br />
-                    <a className='footerText' href="https://www.linkedin.com/in/matthew-lategan-449921235/" target="_blank">Repo for this site</a>
+                    <a className='footerText' href="https://github.com/RoughRoman/RoughRoman.github.io" target="_blank">Repo for this site</a>
                     <p className='footerText'>Created with React, built with Vite, hosted on Github.io</p>
                     
                 </div>

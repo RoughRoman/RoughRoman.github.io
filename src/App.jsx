@@ -4,6 +4,8 @@ import HeroBar from './specialComponents/herobar/herobar.jsx';
 import AboutSection from './specialComponents/about/about';
 import ExperienceSection from './specialComponents/Experience/experienceSection';
 import Footer from './specialComponents/footer/footer';
+import Projects from './specialComponents/projects/projects';
+import Education from './specialComponents/education/education';
 
 
 
@@ -19,6 +21,9 @@ function App() {
           <HeroBar></HeroBar>
           <AboutSection></AboutSection>
           <ExperienceSection></ExperienceSection>
+          <Education></Education>
+          <Projects></Projects>
+
           <Footer></Footer>
         </div>
         
@@ -37,6 +42,8 @@ function App() {
           </div>
         <div className='ExperienceColumn'>
           <ExperienceSection></ExperienceSection>
+          <Education></Education>
+          <Projects></Projects>
         </div>
         
       </div>
