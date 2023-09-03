@@ -20,7 +20,7 @@
   }
   
   /* Single-column layout for smaller screens (e.g., mobile) */
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     .DualColumns {
       flex-direction: column; /* Change to a single column layout */
     }
