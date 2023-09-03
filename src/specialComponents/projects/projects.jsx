@@ -21,6 +21,8 @@ export default function Projects(){
                 <br />
                 <p className='sectionBody'>I think the video below sums it up well.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/-QxI-RP6-HM?si=i5xNteu2-1DaMWWQ&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br />
+                <a className='sectionBody' href="https://github.com/RoughRoman/RoughRoman.github.io" target="_blank">Here is the repository</a>
             </div>
             
 
