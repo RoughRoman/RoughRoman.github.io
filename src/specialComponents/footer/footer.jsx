@@ -11,7 +11,7 @@ export default function Footer(){
                 <br />
                 <br />
                     <a className='footerText' href="https://github.com/RoughRoman/RoughRoman.github.io" target="_blank">Repo for this site</a>
-                    <p className='footerText'>Created with React, built with Vite, hosted on Github.io</p>
+                    <p className='footerText'>Created with React and Vite, hosted on Github.io</p>
                     
                 </div>
                 <div>

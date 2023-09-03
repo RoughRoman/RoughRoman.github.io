@@ -2,19 +2,26 @@ import './about.css'
 import Section from '../../basic Components/section/section';
 
 export default function AboutSection(){
+   
+    const birthDate = new Date('2000-06-26');
+    const currentDate = new Date();
+    const ageInMilliseconds = currentDate - birthDate;
+    const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365.25);
+    const age = Math.floor(ageInYears);
+
+    let aboutText = "Hi, I'm a "+age+"-year-old computer enthusiast residing in South Africa,"
+                +" deeply passionate about computer science and technology. My interests "
+                +" primarily revolve around software development, technology innovations,"
+                +" and the ever-evolving world of digital solutions. I'm dedicated to continuous"
+                +" learning and exploration in the field, seeking opportunities to expand my"
+                +" knowledge and skills in this exciting realm. In summary, I just love cool computer magic."
+
     return(
         <> 
             <Section props = {{
                 heading: "",
                 subHeading: "About Me",
-                body: "I am a dedicated and passionate computer scientist, with a strong foundation in "
-                +"problem-solving and a drive for innovative solutions. With a keen eye for detail and a "
-                +"natural analytical mindset, I excel in tackling complex challenges. I embrace "
-                +"continuous learning to ensure my skills remain relevant and adaptable. "
-                +"Collaborative and effective in communication, I thrive in diverse teams, "
-                +"bringing a valuable contribution to group dynamics. I am fuelled by curiosity and a "
-                +"constant desire to improve, exploring emerging technologies and pushing the "
-                +"boundaries of technological advancements."
+                body: aboutText
             }}></Section>
         </>   
     )

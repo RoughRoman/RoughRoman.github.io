@@ -13,26 +13,6 @@ import {isMobile} from 'react-device-detect';
 
 function App() {
   const [count, setCount] = useState(0)
-
-  if (isMobile){
-    return(
-      <>
-        <div className='MobileView'>
-          <HeroBar></HeroBar>
-          <AboutSection></AboutSection>
-          <ExperienceSection></ExperienceSection>
-          <Education></Education>
-          <Projects></Projects>
-
-          <Footer></Footer>
-        </div>
-        
-      </>
-      
-    )
-
-  }
-  else{ // if desktop split into two columns
     return (
       <>
       <div className='DualColumns'>
@@ -50,7 +30,7 @@ function App() {
       <Footer></Footer>
       </>
     )
-  }
+
 }
 
 export default App

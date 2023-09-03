@@ -1,22 +1,35 @@
-.DualColumns{
+/* Dual-column layout for larger screens */
+.DualColumns {
     display: flex;
-}
-.HeroColumn{
-    max-width: 40%;
-}
-
-.ExperienceColumn{
-    max-width: 60%;
-}
-.tempHead{
-    color: white;
-}
-
-.tempP{
-    color: white;
-
-}
-
-.tempEm{
-    color: grey;
-}
+    flex-direction: row;
+  }
+  
+  .HeroColumn {
+    width: 40%; /* Adjust the width as needed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+  }
+  
+  .ExperienceColumn {
+    margin-left: 40%; /* Adjust the margin to create space for the fixed column */
+    padding: 20px; /* Add padding as needed */
+    overflow-y: auto;
+  }
+  
+  /* Single-column layout for smaller screens (e.g., mobile) */
+  @media (max-width: 768px) {
+    .DualColumns {
+      flex-direction: column; /* Change to a single column layout */
+    }
+  
+    .HeroColumn,
+    .ExperienceColumn {
+      width: 100%; /* Make both columns take full width */
+      position: static; /* Remove fixed positioning */
+      margin-left: 0; /* Reset margin */
+    }
+  }
+  
