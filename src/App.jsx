@@ -10,7 +10,6 @@ import EmailIcon from '@mui/icons-material/Email';
 import LaunchIcon from '@mui/icons-material/Launch';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
-import RepoPic from './assets/github.jpg';
 import CV from './docs/M.Lategan CV.pdf';
 import Record from './docs/AcademicRecord.pdf';
 
@@ -237,7 +236,7 @@ function Projects(){
         <ProjectCard
         projectTitle={"This website"}
         projectSubHeader={"React + MaterialUi"}
-        projectMediaSrc={RepoPic}
+        projectMediaSrc={null}
         linkTo={"https://github.com/RoughRoman/RoughRoman.github.io"}
         />
         
