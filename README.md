@@ -1,4 +1,2 @@
 # RoughRoman.github.io
-Messing around with React for my own kakaka website
-
-i swear it will be waaay more professional once it starts to look like an adult made it.
+Branching out in web development. An _interesting_ change from c++ systems stuff. No bits and bytes. Although, it's really just a UI and not much else. Still, I learned enough to confirm my suspicions that I am not a UX designer.
