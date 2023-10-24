@@ -131,8 +131,8 @@ function Experience(){
         <ExperienceCard
           companyAndDate="Tangent Solutions | Starting 2024"
           jobTitle="Junior Engineering Consultant."
-          skillsList="AWS, Linux, Github, YAML, Python"
-          responList="Assisting in the design and implementation of scalable, cloud-native business infrastructure."
+          skillsList="To be discovered"
+          responList="To be discovered"
           linkTo="https://tangentsolutions.co.za/"
           imgSrc="https://media.licdn.com/dms/image/C510BAQHDmnordYXYVw/company-logo_200_200/0/1519879581821?e=2147483647&v=beta&t=N8ux-twe81KC4VlRHYVoELnMuby_FQ-3_2FwxM4hwnQ"
         />
@@ -198,6 +198,7 @@ function Education(){
           imgSrc={"https://pbs.twimg.com/media/D3umixOWsAAg5ev.jpg"}
         />
 
+        {/*
         <EducationCard 
           instituteAndDate={"AWS Certifications | 2024"}
           qualification={"Certified Cloud Practitioner"}
@@ -205,6 +206,7 @@ function Education(){
           linkTo={"https://aws.amazon.com/certification/certified-cloud-practitioner/?ch=sec&sec=rmg&d=1"}
           imgSrc={"https://www.jdrf.org/wp-content/uploads/2020/12/AWS-logo-2.jpg"}
         />
+        */}
 
         <Button sx={{marginTop:"1%"}} variant="outlined" color="primary" href={Record} download={"M-Lategan-AcademicRecord"} >
           <Typography fontFamily={'roboto'} textTransform={"none"}> Here's my Academic Record</Typography>
