@@ -4,11 +4,11 @@ import App from './App.jsx'
 import {isMobile} from 'react-device-detect';
 
 
-if (isMobile){
-  import('./mobileIndex.css')
+if (isDesktop){
+  import('./index.css')
 }
 else{
-  import('./index.css')
+  import('./mobileIndex.css')
 }
 
 
