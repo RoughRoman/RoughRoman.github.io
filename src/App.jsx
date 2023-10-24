@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Grid, IconButton,  AppBar, Toolbar, Container, Box, CardHeader, Avatar, CardContent, Button,  CardMedia, Fab,Icon } from '@mui/material';
+import { Grid, IconButton,  AppBar, Toolbar, Container, Box, CardHeader, Avatar, CardContent, Button,  Fab, createTheme, ThemeProvider } from '@mui/material';
 import Typography from '@mui/material/Typography'
 import Card from '@mui/material/Card';
 
@@ -14,33 +14,62 @@ import CV from './docs/M.Lategan CV.pdf';
 import Record from './docs/AcademicRecord.pdf';
 
 
+export const themeOptions = {
+  palette: {
+    mode: 'dark',
+    primary: {
+      main: '#673ab7',
+    },
+    secondary: {
+      main: '#009688',
+    },
+    info: {
+      main: '#29f6e0',
+    },
+    text: {
+      primary: '#aae2ec',
+      secondary: 'rgba(34,148,127,0.7)',
+    },
+    background: {
+      default: '#121212',
+    },
+  },
+};
+
+const mainTheme = createTheme(themeOptions);
+
 
 function App() {
   return (
     <>
-      <NavBar></NavBar>
-      <HeroBar></HeroBar>
-      <Experience></Experience>
-      <Education></Education>
-      <Projects></Projects>
-      <Fab
-        sx={{
-          backgroundColor: "hsla(270, 1%, 29%, 0.3)",
-          margin: "0px",
-          top: "auto",
-          right: "20px",
-          bottom: "20px",
-          left: "auto",
-          position: "fixed"}}
-        color="primary"
-        aria-label=""
-        onClick={()=>{
-          window.scrollTo({top: 0, behavior: 'smooth'});
-        }}
-      >
-        
-        <ArrowUpwardIcon/>
-      </Fab>
+    
+      <ThemeProvider theme={mainTheme}>
+        <NavBar></NavBar>
+        <HeroBar></HeroBar>
+        <Experience></Experience>
+        <Education></Education>
+        <Projects></Projects>
+        <Fab
+          sx={{
+            backgroundColor: "hsla(270, 1%, 29%, 0.3)",
+            margin: "0px",
+            top: "auto",
+            right: "20px",
+            bottom: "20px",
+            left: "auto",
+            position: "fixed"}}
+          color="primary"
+          aria-label=""
+          onClick={()=>{
+            window.scrollTo({top: 0, behavior: 'smooth'});
+          }}
+        >
+          
+          <ArrowUpwardIcon/>
+        </Fab>
+
+      </ThemeProvider>
+      
 
 
       
@@ -56,12 +85,13 @@ function HeroBar() {
       <Container sx={{
         paddingTop: '10%'
       }}>
-        <Typography fontFamily={'roboto'} variant="h1" color="initial" sx={{
+        <Typography fontFamily={'roboto'} variant="h1" color="secondary" sx={{
         }}> Hello, I'm Matthew Lategan. </Typography>
-        <Typography fontFamily={'roboto'} variant="body1" color="initial" sx={{
+        <Typography fontFamily={'roboto'} variant="body1" color="secondary" sx={{
           fontSize:'30px'
         }}>Welcome to my site. Please, have a look around.</Typography>
       </Container>
+      
     </>
   );
 }
@@ -97,7 +127,7 @@ function Experience(){
   return(
     <>
       <Container sx={{paddingTop:"10%"}}>
-        <Typography  fontFamily={'roboto'} variant="h2" sx={{ paddingBottom:"3%"}}>Experience</Typography>
+        <Typography  fontFamily={'roboto'} variant="h2" sx={{ paddingBottom:"3%"}} color="secondary">Experience</Typography>
         <ExperienceCard
           companyAndDate="Tangent Solutions | Starting 2024"
           jobTitle="Junior Engineering Consultant."
@@ -159,7 +189,7 @@ function Education(){
   return(
     <>
       <Container sx={{paddingTop:"10%"}}>
-        <Typography fontFamily={'roboto'} variant="h2" sx={{ paddingBottom:"3%"}}>Education|Certifications</Typography>
+        <Typography fontFamily={'roboto'} variant="h2" sx={{ paddingBottom:"3%"}} color="secondary">Education|Certifications</Typography>
         <EducationCard 
           instituteAndDate={"University of South Africa | 2019 - 2022"}
           qualification={"Bachelor of Science in Computing"}
@@ -223,7 +253,7 @@ function Projects(){
   return(
     <>
     <Container>
-      <Typography fontFamily={'roboto'} variant="h2" sx={{marginTop:"10%"}} > Projects</Typography>
+      <Typography fontFamily={'roboto'} variant="h2" sx={{marginTop:"10%"}} color="secondary" > Projects</Typography>
       <Grid
         container
         spacing={1}
@@ -236,7 +266,7 @@ function Projects(){
         <ProjectCard
         projectTitle={"This website"}
         projectSubHeader={"React + MaterialUi"}
-        projectMediaSrc={null}
+        
         linkTo={"https://github.com/RoughRoman/RoughRoman.github.io"}
         />
         
@@ -246,10 +276,9 @@ function Projects(){
     </>
   )
 }
-function ProjectCard({projectTitle, projectSubHeader, projectMediaSrc, linkTo}){
+function ProjectCard({projectTitle, projectSubHeader,  linkTo}){
   return(<>
     <Card sx={{ backgroundColor: "hsla(270, 1%, 29%, 0.3)", marginTop:"2%", marginBottom:"10%"}}>
-      <CardMedia title="" image={projectMediaSrc} />
       <CardHeader
         action={
           <IconButton aria-label="" href={linkTo} target='_blank'>
