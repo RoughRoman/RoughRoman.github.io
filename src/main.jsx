@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import {isMobile} from 'react-device-detect';
+import {isDesktop} from 'react-device-detect';
 
 
 if (isDesktop){
