@@ -13,6 +13,9 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import CV from './docs/M.Lategan CV.pdf';
 import Record from './docs/AcademicRecord.pdf';
 
+/* Initially, this project had a nest of sub folders for various components and sub-components.
+However, the project is not nearly complex enough to justify creating said nest of folders. So its all here in App.jsx */
+
 
 export const themeOptions = {
   palette: {
@@ -137,8 +140,8 @@ function Experience(){
           imgSrc="https://media.licdn.com/dms/image/C510BAQHDmnordYXYVw/company-logo_200_200/0/1519879581821?e=2147483647&v=beta&t=N8ux-twe81KC4VlRHYVoELnMuby_FQ-3_2FwxM4hwnQ"
         />
         
-        <Button sx={{marginTop:"1%"}} variant="outlined" color="primary" href={CV} download={"M-Lategan-CV"} >
-          <Typography fontFamily={'roboto'} textTransform={"none"}> Want my CV?</Typography>
+        <Button sx={{marginTop:"1%"}} variant="outlined" color="secondary" href={CV} download={"M-Lategan-CV"} >
+          <Typography fontFamily={'roboto'} textTransform={"none"} fontSize={"25px"}> Want my CV?</Typography>
           
         </Button>
       </Container>
@@ -193,7 +196,7 @@ function Education(){
         <EducationCard 
           instituteAndDate={"University of South Africa | 2019 - 2022"}
           qualification={"Bachelor of Science in Computing"}
-          description={"Successful learners should have: A systematic and coherent body of knowledge. An understanding of underlying concepts and principles of computing and the ability to apply this in the workplace. A high level of cognitive and other generic skills including problem-solving, written and spoken communication. Specific skills and applied competence leading to continued personal intellectual growth, gainful economic activity and valuable contributions to society in science and technology."}
+          description={"From the UNISA website: 'Successful learners should have a systematic and coherent body of knowledge. An understanding of underlying concepts and principles of computing and the ability to apply this in the workplace. A high level of cognitive and other generic skills including problem-solving, written and spoken communication. Specific skills and applied competence leading to continued personal intellectual growth, gainful economic activity and valuable contributions to society in science and technology.'"}
           linkTo={"https://www.unisa.ac.za/sites/corporate/default/Register-to-study-through-Unisa/Undergraduate-&-honours-qualifications/Find-your-qualification-&-choose-your-modules/All-qualifications/Bachelor-of-Science-in-Computing-(98906-%E2%80%93-COM)"}
           imgSrc={"https://pbs.twimg.com/media/D3umixOWsAAg5ev.jpg"}
         />
@@ -208,8 +211,8 @@ function Education(){
         />
         */}
 
-        <Button sx={{marginTop:"1%"}} variant="outlined" color="primary" href={Record} download={"M-Lategan-AcademicRecord"} >
-          <Typography fontFamily={'roboto'} textTransform={"none"}> Here's my Academic Record</Typography>
+        <Button sx={{marginTop:"1%"}} variant="outlined" color="secondary" href={Record} download={"M-Lategan-AcademicRecord"} >
+          <Typography fontFamily={'roboto'} textTransform={"none"} fontSize={"25px"}> Here's my Academic Record</Typography>
         </Button> 
         
       </Container>
@@ -292,7 +295,9 @@ function ProjectCard({projectTitle, projectSubHeader,  linkTo}){
         
       />
       <CardContent>
-        <Typography variant="body1" color="initial">Not much to say about it. You are currently viewing it.</Typography>
+      <Box flexGrow={1}>
+            <Typography>Not much to say about it. You are currently viewing it. Go dig in the source code if you are interested. Also please note: I have no experience with web development or UX design. So don't take this as my best. This is literally a first project</Typography>
+      </Box>
       </CardContent>
     </Card>
   
