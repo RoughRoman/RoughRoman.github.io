@@ -314,9 +314,9 @@ function Projects(){
   )
 }
 function ProjectCard({projectTitle, projectSubHeader,  linkTo, content}){
-  linkBtn = true;
+  linkBtn = false;
   if (linkTo == null){
-    linkBtn = false;
+    linkBtn = true;
   }
   return(<>
     <Card sx={{ backgroundColor: "hsla(270, 1%, 29%, 0.3)", marginTop:"2%", marginBottom:"10%"}}>
