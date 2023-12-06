@@ -271,8 +271,37 @@ function Projects(){
         <ProjectCard
         projectTitle={"This website"}
         projectSubHeader={"React + MaterialUi"}
-        
+        content= {"Not much to say about it. You are currently viewing it. Go dig in the source code if you are interested. Also please note: I have no experience with web development or UX design. So don't take this as my best. This is literally a first project"}
         linkTo={"https://github.com/RoughRoman/RoughRoman.github.io"}
+        />
+
+        <ProjectCard
+        projectTitle={"Obsidian to Html Wiki"}
+        projectSubHeader={"Python"}
+        content= {"I love obsidian, best note app I've ever used. But I'm not going to pay them just to host my hard written notes as a wiki. " +
+         "When I could build a solution to do it myself. So, with a bit of python-ing and html-ing, "+
+         "I should be able to create a folder with all my notes turned into functioning and semi nice looking html pages. Basically just wrap the "+
+         "markdown content in some MD compatible Html element. Do some string manipulation to convert MD links to anchors. Maybe spruce it up with an index page and some styling. Bam"}
+        linkTo={"https://github.com/RoughRoman/Obsidian-to-html"}
+        />
+
+        <ProjectCard
+        projectTitle={"LeadrBoard"}
+        projectSubHeader={"React + AWS"}
+        content = {"This is an idea bubbling in my mind. Nothing concrete done yet. Still struggling with React. GUIs are hard to design." +
+                  " Basically I want a webapp for my fellow tabletop wargame players to be able to rank each other and organise local tornaments etc."+
+                  " I want to leverage AWS to provide data storage, Auth, data processing (Lambda), and other bits and pieces. Namely, because it's" +
+                  " good experience and it will work out cheaper to host if I build and optimise things myself."}
+        linkTo={"Github is empty so far. Check back in 365 working days."}
+        />
+
+        <ProjectCard
+        projectTitle={"LightWeight"}
+        projectSubHeader={"React"}
+        content={"Essentially a workout logging app. But the challenge is trying to fit all user data inside the browsers cache." +
+        " No log-ins, no databases. Just pure json compressed to hell. Definetly provide some kind of import/export system so that"+
+         " people dont lose their data if they clear their browser cache. This is lowest on my project list. Might not even be feasible. But worth a tinker "}
+        linkTo={"Nope. Still nothing to show for it."}
         />
         
       </Grid>
@@ -281,7 +310,7 @@ function Projects(){
     </>
   )
 }
-function ProjectCard({projectTitle, projectSubHeader,  linkTo}){
+function ProjectCard({projectTitle, projectSubHeader,  linkTo, content}){
   return(<>
     <Card sx={{ backgroundColor: "hsla(270, 1%, 29%, 0.3)", marginTop:"2%", marginBottom:"10%"}}>
       <CardHeader
@@ -296,7 +325,7 @@ function ProjectCard({projectTitle, projectSubHeader,  linkTo}){
       />
       <CardContent>
       <Box flexGrow={1}>
-            <Typography>Not much to say about it. You are currently viewing it. Go dig in the source code if you are interested. Also please note: I have no experience with web development or UX design. So don't take this as my best. This is literally a first project</Typography>
+            <Typography>{content}</Typography>
       </Box>
       </CardContent>
     </Card>
