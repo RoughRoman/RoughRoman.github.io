@@ -303,7 +303,7 @@ function Projects(){
         projectSubHeader={"React"}
         content={"Essentially a workout logging app. But the challenge is trying to fit all user data inside the browsers cache." +
         " No log-ins, no databases. Just pure json compressed to hell. Definitely provide some kind of import/export system so that"+
-         " people dont lose their data if they clear their browser cache. This is lowest on my project list. Might not even be feasible. But worth a tinker "}
+         " people dont lose their data if they clear their browser cache. This is lowest on my project list. Might not even be feasible. But worth a tinker."}
         linkTo={null}
         />
         
@@ -314,7 +314,7 @@ function Projects(){
   )
 }
 function ProjectCard({projectTitle, projectSubHeader,  linkTo, content}){
-  linkBtn = false;
+  var linkBtn = false;
   if (linkTo == null){
     linkBtn = true;
   }
