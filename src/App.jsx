@@ -221,6 +221,7 @@ function Education(){
   )
 }
 function EducationCard({ instituteAndDate, qualification, description, linkTo, imgSrc }) {
+    
   return (
     <Card sx={{ backgroundColor: "hsla(270, 1%, 29%, 0.3)", marginTop:"2%" }}>
       <CardHeader
@@ -255,6 +256,8 @@ function EducationCard({ instituteAndDate, qualification, description, linkTo, i
 }
 
 function Projects(){
+
+ 
   return(
     <>
     <Container>
@@ -292,16 +295,16 @@ function Projects(){
                   " Basically I want a webapp for my fellow tabletop wargame players to be able to rank each other and organise local tornaments etc."+
                   " I want to leverage AWS to provide data storage, Auth, data processing (Lambda), and other bits and pieces. Namely, because it's" +
                   " good experience and it will work out cheaper to host if I build and optimise things myself."}
-        linkTo={"Github is empty so far. Check back in 365 working days."}
+        linkTo={null}
         />
 
         <ProjectCard
         projectTitle={"LightWeight"}
         projectSubHeader={"React"}
         content={"Essentially a workout logging app. But the challenge is trying to fit all user data inside the browsers cache." +
-        " No log-ins, no databases. Just pure json compressed to hell. Definetly provide some kind of import/export system so that"+
+        " No log-ins, no databases. Just pure json compressed to hell. Definitely provide some kind of import/export system so that"+
          " people dont lose their data if they clear their browser cache. This is lowest on my project list. Might not even be feasible. But worth a tinker "}
-        linkTo={"Nope. Still nothing to show for it."}
+        linkTo={null}
         />
         
       </Grid>
@@ -311,11 +314,15 @@ function Projects(){
   )
 }
 function ProjectCard({projectTitle, projectSubHeader,  linkTo, content}){
+  linkBtn = true;
+  if (linkTo == null){
+    linkBtn = false;
+  }
   return(<>
     <Card sx={{ backgroundColor: "hsla(270, 1%, 29%, 0.3)", marginTop:"2%", marginBottom:"10%"}}>
       <CardHeader
         action={
-          <IconButton aria-label="" href={linkTo} target='_blank'>
+          <IconButton aria-label="" href={linkTo} target='_blank' disabled={linkBtn}>
             <LaunchIcon></LaunchIcon>
           </IconButton>
         }
