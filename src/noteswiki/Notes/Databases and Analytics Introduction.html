@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Databases and Analytics Introduction</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block>#database/analytics
+- Storing data on disk (EFS, EBS, EC2 instance Store, S3 can have its limits)
+- Structured data is better for a database to efficiently query/search through the data
+- You define relationships between your datasets
+- Databases are optimized for a purpose and come with different features, shapes and constraints.
+
+### Relational Databases
+- Traditional relational data. 
+- AWS RDS overview
+	- RDS = relational database service
+	- Its a managed DB Service for DBs that use SQL as a query language
+	- It allows to create databases in the cloud that are managed by aws
+	- Examples:
+		- Postgres, MySQL, MariaDB, Oracle, Microsoft SQL servers
+		- <a href = "Aurora.html">Aurora</a>
+	- Why use RDS?
+		- Automated provisioning, OS patching
+		- Continuous backups and restore to specific timestamps
+		- Monitoring Dashboards
+		- Read Replicas for improved read performance
+		- Multi AZ setup for Disaster Recovery
+		- maintenance windows for upgrades
+		- Scaling capability Vertical and horizontal
+		- Storage backed by EBS (gp2 or io l)
+		- BUT YOU CAN'T SSH INTO IT<img src = "..\Images\Pasted image 20231128113445.png"></img>
+- <a href = "RDS Deployment Options.html">RDS Deployment Options</a>
+- <a href = "RedShift.html">RedShift</a> (More like a data warehouse)
+
+### NoSQL Databases
+- NoSQL = non-SQL = non relational databases
+- NoSQL databases are purpose built for specific data models and have flexible schemas for building modern applications
+- Benefits:
+	- Flexibility: Easy to evolve data model
+	- Scalability: Designed to scale-out by using distributed clusters
+	- High performance: optimized for a specific data model
+	- Highly Functional: types optimized for the data model.
+- Examples: key-value, Document, Graph, in-memory, search databases.
+- <a href = "ElastiCache.html">ElastiCache</a> (managed, in-memory database)
+- <a href = "DynamoDB.html">DynamoDB</a> 
+- <a href = "DocumentDB.html">DocumentDB</a>
+- <a href = "Neptune.html">Neptune</a>
+
+
+### Other DB types or services
+- <a href = "EMR.html">EMR</a>  (Hadoop Big data cluster service.)
+- <a href = "Athena.html">Athena</a>
+- <a href = "QuickSight.html">QuickSight</a>
+- <a href = "QLDB.html">QLDB</a>
+- <a href = "Glue.html">Glue</a>
+- <a href = "DMS.html">DMS</a>
+
+
+### Summary
+<img src = "..\Images\Pasted image 20231204124617.png"></img>
+### AWS Offers managed database services.
+<img src = "..\Images\Pasted image 20231127140453.png"></img></md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>

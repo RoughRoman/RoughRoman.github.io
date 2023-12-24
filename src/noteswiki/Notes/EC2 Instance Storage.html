@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EC2 Instance Storage</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block> #storage 
+<a href = "EBS Volumes.html">EBS Volumes</a> : Elastic Block Store
+<a href = "EC2 Instance Store.html">EC2 Instance Store</a> : specialized EC2 that is a physical hard drive attached to the physical server
+<a href = "Elastic File System.html">Elastic File System</a> : EFS
+
+###  ### The shared Responsibility model for <a href = "EC2 Instance Storage.html">EC2 Instance Storage</a>
+- - AWS is responsible for :
+	- Infrastructure( global network security)
+	- Data Replication for EBS and EFS across hardware
+	- Replacing Faulty hardware
+	- Ensuring AWS employees cant access customer Sensitive data
+- You are responsible for :
+	- Back-ups / snapshot procedures
+	- setting up data encryption
+	- Responsibility of any data on the drives
+	- Understanding the risk of Using EC2 Instance Store (volatile)
+	
+### Summary:
+<img src = "..\Images\Pasted image 20231108145716.png"></img></md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>

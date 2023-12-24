@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multi-Factor Authentication</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block>#security 
+Users have access to your account and can cause changes. So you want to protect your root and IAM user accounts
+
+So you use MFA which consists of a password **you know**+ a security device **you own**
+
+benefit of MFA is that even if a password is compromised. the account is safe because the physical device is required for log-in
+
+### MFA device options
+* Virtual MFA Device - authentication software for phones or other devices.
+	* Google authenticator (Phones only) or Authy(Multi-device + support for multiple tokens on a single account)
+* Universal 2nd factor (U2F) Security key
+	* Which is a physical device like a usb stick.
+	* Supports multiple root and IAm users with a single key
+	* Provided by Yubico
+* Hardware Key Fob MFA Device
+	* Provides a code on a small physical device(provided by Gemalto)
+* Hardware Key Fob MFA Device for AWS GovCloud(US only)
+	* provided by SurePassID</md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>

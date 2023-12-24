@@ -7,6 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import TextSnippetIcon from '@mui/icons-material/TextSnippet';
 import LaunchIcon from '@mui/icons-material/Launch';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 
@@ -118,6 +119,9 @@ function NavBar() {
           </IconButton>
           <IconButton aria-label="email icon" href="mailto:matthew.lategan26@gmail.com">
             <EmailIcon fontSize='large'></EmailIcon>
+          </IconButton>
+          <IconButton aria-label="note icon" href="src\noteswiki\Note-Index.html">
+            <TextSnippetIcon fontSize='large'></TextSnippetIcon>
           </IconButton>
         </Box>
       </Toolbar>

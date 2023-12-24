@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AMI</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block>#compute 
+Amazon Machine Image
+- represent a customization of an EC2 instance
+- You add your own software, config, OS, monitoring
+- Fast boot/ config time because all the software is pre-packed
+- AMIs are built for a specific region (but can be copied across regions)
+- You can launce EC2 instances from a public AMI which is AWS provided. e.g. Amazon Linux 2
+- We can of course create your own, but then you need to maintain them as well.
+- You can also launch an EC2 instance from an AMI from the marketplace. could be paid or free. 
+### Process of creating an AMI
+- Start an EC2 instance and customize it
+- Stop the instance for data integrity
+- Build an AMI from it which creates EBS snapshots behind the scenes
+- Launch instances from this or other AMIs</md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EC2 instance types</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block>#compute 
+
+You can use different types of EC2 Instances that are optimised for different use cases
+
+### naming conventions
+Example:
+m5.2xlarge 
+* m : instance class
+* 5 : generation. ( Aws improves them )
+* 2xlarge : size with the instance class 
+
+
+# categories:
+### general purpose 
+* great for diversity of workloads such as web servers. 
+* balance between compute, memory, and networking capabilities 
+* Example is the t2.micro which is a general purpose EC2 instance.
+
+### Compute Optimized
+* Great for compute intensive tasks that require high performance CPUs 
+* like batch processing, media transcoding, game servers, high performance computing (HPC) etc
+* Generally they have names that start with a C like C6g
+
+
+### Memory optimized
+* Fast performance for workloads that require large data sets in memory 
+* Like in-memory databases 
+* distributed web scale cache stores 
+* Real time processing of big unstructured data.
+* like R series R6g
+
+
+### Storage optimized
+* Good for storage intensive tasks that require high, sequential read and write access to large data sets on local storage. 
+* used for High frequency on-line transaction processing (OLTP) systems, Or data warehousing, or distributed file systems , or traditional relational databases/nosql databases.</md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>

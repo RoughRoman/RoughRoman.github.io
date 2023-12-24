@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AWS Global Infrastructure</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block>### Overview
+AWS global infrastructure is made up of a few concepts
+* AWS Regions:
+	* AWS has regions all around the world. They have names like us-east-1 af-south-1 etc
+	* A region is a cluster of data centres
+	* Most AWS services are region-scoped
+	* How do you choose an AWS region?
+		* It depends, but here are some factors
+			* Compliance with data governance and legal requirements
+			* Proximity to customers: reduced latency
+			* Available services within a region. Not all services are available in all regions. 
+			* Pricing: pricing varies region to region
+
+* AWS Availability Zones
+	* Each Region has many availability zones, usually 3, min is 3 max is 6
+	* Example: Region = ap-southeast-2 | 3 availability zones       =         ap-southeast-2a, ap-southeast-2b, ap-southeast-2c
+	* Each of these zones are one or more discrete data centres with redundant power, networking and connectivity.
+	* They are separate from each other so they are isolated from disasters
+	* They are connected with high bandwidth, ultra low latency networks.
+
+* AWS points of presence(Edge locations)
+	* Amazon has 400+ points of presence. content is delivered to end users with lower latency.
+
+https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+
+### Services
+- <a href = "Route 53.html">Route 53</a>
+- <a href = "CloudFront.html">CloudFront</a> (CDN)
+- S3 Transfer
+
+### Further Notes
+- <a href = "Why make a global Application.html">Why make a global Application</a>
+
+#global-infrastructure
+#introduction</md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>

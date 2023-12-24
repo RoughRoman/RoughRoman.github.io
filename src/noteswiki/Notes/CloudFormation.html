@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CloudFormation</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block>#devops
+* CloudFormation is a declarative way of outlining your AWS infrastructure, for any resources.
+* Example:
+	* Create a security group
+	* Then Create 3 EC2 instances using that security group
+	* I want an S3 bucket
+	* I want a load balancer ELB in front of these machines
+	* *Then CloudFormation will create these for you, in the right order, with the exact configuration that you specify.*
+
+### Benefits
+* infrastructure as code
+	* No resources are manually created, which is excellent for control
+	* Changes to infrastructure are reviewed through code
+* Cost
+	* Each resource within the stack is tagged with an identifier so you can easily see how much a stack costs you.
+	* You can estimate costs of your resources using the CloudFormation template.
+	* Savings Strategy: in development, you could automate the deletion and recreation of templates during times high or low load. 
+* Productivity
+	* Ability to destroy and recreate an infrastructure on the cloud on the fly
+	* Automated generation of diagrams for your templates
+	* Declarative programming
+* Don't reinvent the wheel
+	* leverage existing templates on the web!
+	* Leverage the documentation
+* Supports (Almost) all AWS resources
+	* You can use custom resources for resources that are not supported. </md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>

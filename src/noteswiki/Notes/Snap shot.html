@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snap shot</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block>#storage 
+- You can make a snapshot or backup of your EBS volume state at any point in time. 
+- Not necessary to detach volume to make a snapshot but it is recommended
+- Can copy snapshots across AZ or Regions
+
+### EBS Snapshots Features 
+- Able to move a snapshot to an "Archive tier" that is 75% cheaper
+	- Takes 24 to 72 hours to restore  the archive. 
+- You can set rules to retain deleted snapshots so you can recover them after an accidental deletion. 
+	- You specify retention period. From 1 day to 1 year, after which it will be deleted permanently.
+	
+To make snapshot select a EBS volume > actions > create snapshot. Similar process to recreate an EBS from a snapshot to another region. 
+
+
+
+
+
+<img src = "..\Images\Pasted image 20231108114944.png"></img></md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>

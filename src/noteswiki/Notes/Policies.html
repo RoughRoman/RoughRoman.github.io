@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Policies</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block>#security 
+### IAM policies Inheritance:
+* Every user in a group inherits the policies of that group
+* A policy that is only attached to an individual user is called an inline policy
+* If a user belongs to multiple groups. That user inherits the policies of all the groups they are a part of. <img src = "..\Images\Pasted image 20231025113143.png"></img>
+### IAM Policy Structure
+* Consists of :
+	* **Version**: Policy language version.
+	* **ID**: an identifier for the policy (optional)
+	* **Statement**: one or more statements. It consists of:
+		* **Sid**: and identifier for the statement (optional)
+		* **Effect**: whether the statement allows or denies access.
+		* **Principal**: Account/ user/ role to which the policy applies
+		* **Action**: list of actions this policy allows or denies
+		* **Resource**: list of resources to which the actions applied to
+	* **Condition**(not on image): conditions for when this policy is in effect.(optional)
+<img src = "..\Images\Pasted image 20231025113831.png"></img>
+
+Syntax notes:
+* a star * in the place of an action or resource means all actions or resources. So an admin might have all actions for all resources allowed.
+
+You can create your own policies either textually in the json or with the visual editor in the IAM policy console</md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>

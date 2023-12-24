@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elastic Load Balancing</title>
+    <link rel="icon" href="https://obsidian.md/images/obsidian-logo-gradient.svg">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div>
+        <md-block>#compute 
+- Load Balancers are servers that forward internet traffic to multiple servers (EC2 instances) downstream
+- Allows you to spread load across multiple downstream instances
+- Expose only a single point of access DNS to your application.
+- Seamlessly handle downstream failures of instances
+- Do regular health checks on downstream instances
+- Provide SSL termination (HTTPS) for your websites
+- High Availability across zones
+- ELB is a managed load balancer which means:
+	- AWS guarantees that it will be working
+	- AWS handles upgrades, maintenance, high availability
+	- AWS provides only a few config options
+- It costs less to setup your own load balancer but will take more effort from you to maintain and integrate your own.
+
+- *There are 4 Kinds of load balancers offered by AWS*
+	- Application Load Balancer ALB (HTTP/HTTPS only) - layer 7
+	- Network Load Balancer NLB (Ultra-high performance, allows for TCP/UDP) - layer 4
+	- Gateway Load balancer  GLB - layer 3
+	- Classic Load Balancer (RETIRED 2023) - layer 4 and 7
+
+### Differences
+<img src = "..\Images\Pasted image 20231109132206.png"></img>
+</md-block>    
+    </div>
+	<script type="module" src="https://md-block.verou.me/md-block.js"></script>
+  </body>
+</html>
