@@ -120,9 +120,6 @@ function NavBar() {
           <IconButton aria-label="email icon" href="mailto:matthew.lategan26@gmail.com">
             <EmailIcon fontSize='large'></EmailIcon>
           </IconButton>
-          <IconButton aria-label="note icon" href="src\noteswiki\Note-Index.html">
-            <TextSnippetIcon fontSize='large'></TextSnippetIcon>
-          </IconButton>
         </Box>
       </Toolbar>
     </AppBar>
