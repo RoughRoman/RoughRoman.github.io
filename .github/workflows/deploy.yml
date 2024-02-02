@@ -42,12 +42,15 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Create AWS credentials directory
+        run: mkdir -p /home/runner/.aws
+
       - name: Configure AWS CLI
         run: |
           echo "[default]
           aws_access_key_id=${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key=${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          region=${{ secrets.AWS_REGION }}" > ~/.aws/credentials
+          region=${{ secrets.AWS_REGION }}" > /home/runner/.aws/credentials
 
       - name: Deploy to S3
         run: |
